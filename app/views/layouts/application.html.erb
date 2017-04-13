@@ -6,7 +6,43 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   </head>
+
+  <!-- Dropdown Structure -->
+  <ul id="dropdown1" class="dropdown-content">
+    <li><a href="#">Primary Care Physician</a></li>
+    <li><a href="#">Dentist</a></li>
+    <li><a href="#">Pediatrician</a></li>
+    <li><a href="#">OB/GYN</a></li>
+    <li><a href="#">Optometrist</a></li>
+    <li><a href="#">All Doctors</a></li>
+  </ul>
+
+  <nav>
+    <div class="nav-wrapper">
+      <a href="/"><img  class="logo" src="/logo.png" alt="logo"></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li>
+          <!-- Dropdown Trigger -->
+          <li><a class="dropdown-button" data-activates="dropdown1">Doctor Ratings & Reviews<i class="material-icons right">arrow_drop_down</i></a></li>
+        </li>
+        <li><a href="#">Health & Wellness Articles</a></li>
+        <li><a href="#">Review Your Doctor</a></li>
+      </ul>
+    </div>
+  </nav>
+  <% if notice %>
+    <script type="text/javascript">
+      Materialize.toast('<%= notice %>', 6000, 'green rounded')
+    </script>
+  <% end %>
+  <% if alert %>
+    <script type="text/javascript">
+    Materialize.toast('<%= alert %>', 6000, 'red rounded')
+    </script>
+  <% end %>
 
   <body>
     <%= yield %>

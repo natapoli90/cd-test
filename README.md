@@ -1,24 +1,25 @@
-# README
+# Healthcare page design
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Created page from given mockup for the healthcare industry.
 
-Things you may want to cover:
+Technologies used:
 
-* Ruby version
+* Ruby on Rails
 
-* System dependencies
+* PosgreSQL
 
-* Configuration
+* Materialize
 
-* Database creation
+* Photoshop
 
-* Database initialization
+* HTML
 
-* How to run the test suite
+* SCSS
 
-* Services (job queues, cache servers, search engines, etc.)
+### Wireframe
 
-* Deployment instructions
+ ![Wireframe](public/wireframe.png)
 
-* ...
+### My design (actually coded with mentioned technologies)
+
+  ![Coded design](public/design.png)
